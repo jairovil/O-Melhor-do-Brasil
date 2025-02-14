@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assine IPTV de qualidade com planos acessíveis. Filmes, séries e muito mais na sua TV via internet!">
+    <meta name="keywords" content="IPTV, TV Online, Filmes, Séries, Assinatura IPTV">
+    <meta name="author" content="Seu Nome">
+    <title>Assine IPTV - TV Online de Qualidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function enviarWhatsApp(plano) {
+            const numero = '+5522992122046';
+            const mensagem = `Quero assinar o ${plano}`;
+            window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`, '_blank');
+        }
+        
+        function solicitarTeste() {
+            const numero = '+5522992122046';
+            const mensagem = 'Quero solicitar um teste grátis do IPTV';
+            window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`, '_blank');
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .planos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        .plano {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .destaque {
+            border: 2px solid #ff6600;
+        }
+        .botao {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        footer {
+            margin-top: 20px;
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TV Online de Qualidade a um Clique!</h1>
+        <p>Escolha seu plano e aproveite conteúdos incríveis agora mesmo.</p>
+    </header>
+    
+    <section class="planos">
+        <div class="plano">
+            <h2>Pacote Econômico</h2>
+            <p>Apenas <strong>R$ 17,99/mês</strong></p>
+            <p>Conteúdo variado com ótima funcionalidade.</p>
+            <button class="botao" onclick="enviarWhatsApp('Pacote Econômico')">Assinar Agora</button>
+        </div>
+        <div class="plano destaque">
+            <h2>Pacote Full</h2>
+            <p>Apenas <strong>R$ 35,00/mês</strong></p>
+            <p>Mais robusto, maior variedade de conteúdos.</p>
+            <button class="botao" onclick="enviarWhatsApp('Pacote Full')">Assinar Agora</button>
+        </div>
+    </section>
+    
+    <section class="teste">
+        <h2>Teste Grátis</h2>
+        <p>Experimente nosso serviço gratuitamente antes de assinar!</p>
+        <button class="botao" onclick="solicitarTeste()">Pedir Teste Grátis</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Assine IPTV. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
